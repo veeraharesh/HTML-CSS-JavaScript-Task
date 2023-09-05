@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="Stylesheet" href="../css/loginpage.css">
+    </head>
+    <body onload="hideLog()">
+        <h1>
+            Login Page
+        </h1>
+        <form id="Formdata" name="Formdata">
+        <div class="loginform">
+        <label for="uname">Username</label>
+        <input type="text" placeholder="Enter your User name" id="uname" class="uname" required>
+        <br><br><br>
+        <label for="pswd">Password</label>
+        <input type="password" placeholder="Enter your Password" id="pswd" class="pswd" required>
+        <br><br>
+    </div>
+    <input type="checkbox">Remember Me
+    <br><br>
+        <div class="loginbutton">
+            <button>Login</button>
+            <button onclick="home()">Home</button>
+        </div>
+        </form>
+        <script src="../js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+body{
+    background-image: url("../img/producttable\'.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h2
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 75px;
+}
+form{
+    width: 50rem;
+    color: royalblue;
+    display: inline-block;
+    margin: auto;
+}

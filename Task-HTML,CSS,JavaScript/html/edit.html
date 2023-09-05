@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+   <div class="contanier">
+    <div id="edit-form">
+        <form id="edit-form" action="">
+            <label for="productId" >Product Id</label>
+            <input type="text" id="productId" name="productId" value="" disabled>
+            <label for="productName">Product Name</label>
+            <input type="text" id="productName" name="productName" value="">
+            
+            <label for="productQty">Product Quantity</label>
+            <input type="number" id="productQty" name="productQty" value="">
+            
+            <label for="productMrp">Product MRP</label>
+            <input type="number" id="productMrp" name="productMrp" value="">
+            
+            <!-- Add any other input fields you need -->
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+   </div>
+
+  <script>
+    let editProducts = JSON.parse(localStorage.getItem("edit"));
+
+    editProducts.forEach(product => {
+        console.log(product.productId);
+        document.getElementById('productId').value = product.productId;
+       document.getElementById('productName').value = product.productName;
+       document.getElementById('productQty').value = product.productQty;
+       document.getElementById('productMrp').value = product.productMrp;
+    });
+  </script>
+ 
+</body>
+</html>

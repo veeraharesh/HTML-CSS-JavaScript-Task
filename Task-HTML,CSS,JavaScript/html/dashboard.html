@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="Stylesheet" href="../css/product.css">
+    </head>
+    <body>
+        <p id="demo"></p>
+        <div id="outputDiv"></div>
+        <div class="row">
+            <div class="card">
+                <div class="container">
+                    <h4>Product list</h4>
+                    <p>List of Products</p>
+                    <img src="../img/card-product-1.jpg" alt="list">
+                    <button onclick="dashboard()">Product List</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="container">
+                    <h4>Product Count</h4>
+                    <p>Number of Products listed</p>
+                    <img src="../img/card-product-2.jpg" alt="list">
+                    <button onclick="count()">Product count</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="container">
+                    <h4>Product Add</h4>
+                    <p>Add Products here</p>
+                    <img src="../img/productbg.jpg" alt="list">
+                    <button onclick="opentab()">Product Add</button>
+                </div>
+            </div>
+        </div>
+        <button onclick="logout()">Logout</button>
+        <script>
+            var x = JSON.parse(localStorage.getItem("logindetails"));
+            let result = x.map(a=>a.loginname)
+            document.getElementById("demo").innerHTML="Welcome, "+ result;
+            function logout()
+            {
+                window.alert("logout.. Verify");
+                window.open("login.html");
+            }
+            function opentab()
+            {
+                window.open("addproduct.html");
+            }
+            function dashboard()
+            {
+                window.alert("this window takes you to the next site");
+                window.open("products.html");
+            }
+            function count()
+            {
+                window.open("dash.html");
+            }
+        </script>
+    </body>
+</html>

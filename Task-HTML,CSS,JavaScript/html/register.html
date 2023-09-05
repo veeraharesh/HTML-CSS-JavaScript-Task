@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="Stylesheet" href="../css/register.css">
+    </head>
+    <body>
+        <h1>Register Form</h1>
+        <form>
+            <div class="formcontent">
+                <label for="name">Name</label><br>
+                <input type="text" name="Name" id="name" placeholder="Enter the Name" required>
+                <br>
+                <label for="uname">Username</label><br>
+                <input type="text" name="uname" id="uname" placeholder="Enter the Username" required>
+                <br>
+                <label for="email">Email Id</label><br>
+                <input type="email" name="email" id="email" placeholder="Enter the Email id" required>
+                <br>
+                <label for="phonenumber">Phone number</label><br>
+                <input type="number" name="phno" id="phno" placeholder="Enter mobile number without extention" required>
+                <br>
+                <label for="password">Password</label><br>
+                <input type="password" name="pswd" id="pswd" placeholder="Enter the password" required>
+                <br>
+                <label for="repeatpassword">Repeat Password</label><br>
+                <input type="password" name="rpswd" id="rpswd" placeholder="Repeat Password" required>
+        </div>
+        <br>
+        <div class="formbuttons">
+            <button onclick="registered()">Register</button>
+            <button onclick="home()">Home</button><br>
+            <a href="../html/login.html">login if registered</a>
+        </div>
+        </form>
+        <script src="../js/main.js"></script>
+    </body>
+</html>
